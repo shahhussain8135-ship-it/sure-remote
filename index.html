@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sure Universal TV Remote – Control your Smart TV from your phone</title>
+<meta name="description" content="Control your Smart TV from your phone: power, volume, channels, playback and on-screen menus. Auto-detects TVs on the same Wi-Fi. Free on Google Play.">
+<style>
+  :root{
+    --bg:#f3f5f9; --ink:#14213d; --muted:#4a5878; --panel:#14213d; --btn:#243659; --accent:#ff5a36; --line:#d5dbe8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  header{padding:24px 0}
+  header b{font-size:1.05rem;letter-spacing:.02em}
+  .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center;padding:40px 0 64px}
+  h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;margin:0 0 20px;font-weight:800}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:999px}
+  .cta:hover,.cta:focus-visible{background:#e04624;outline:3px solid var(--ink);outline-offset:3px}
+  .note{margin:14px 0 0;color:var(--muted);font-size:.95rem}
+  .remote{justify-self:center;width:220px;background:var(--panel);border-radius:36px;padding:28px 24px 32px;box-shadow:0 20px 40px rgba(20,33,61,.25)}
+  .remote .pwr{width:52px;height:52px;border-radius:50%;background:var(--accent);margin:0 auto 24px}
+  .pad{width:150px;height:150px;border-radius:50%;background:var(--btn);margin:0 auto 24px;display:grid;place-items:center}
+  .pad span{width:56px;height:56px;border-radius:50%;background:var(--panel)}
+  .row{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+  .row i{flex:1;height:40px;border-radius:14px;background:var(--btn)}
+  section{padding:48px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.7rem;margin:0 0 24px}
+  ul.feat{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px}
+  ul.feat li{padding-left:18px;border-left:4px solid var(--accent)}
+  ul.feat strong{display:block}
+  ul.feat span{color:var(--muted)}
+  footer{padding:32px 0 48px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+  @media(max-width:760px){.hero{grid-template-columns:1fr}.remote{order:-1}ul.feat{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><b>Sure Universal TV Remote</b></header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Your phone is now your TV remote.</h1>
+        <p class="lead">Control your Smart TV from your phone: power, volume, channels, playback and on-screen menus.</p>
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.sure.universal.remote">Get it on Google Play</a>
+        <p class="note">Free. Contains ads.</p>
+      </div>
+      <div class="remote" aria-hidden="true">
+        <div class="pwr"></div>
+        <div class="pad"><span></span></div>
+        <div class="row"><i></i><i></i></div>
+        <div class="row"><i></i><i></i></div>
+      </div>
+    </div>
+
+    <section>
+      <h2>What the app does</h2>
+      <ul class="feat">
+        <li><strong>Finds your TV</strong><span>Auto-detects TVs on the same Wi-Fi.</span></li>
+        <li><strong>Full control</strong><span>Power, volume, channels, playback and on-screen menus.</span></li>
+        <li><strong>Touchpad, typing and voice search</strong><span>Move around the screen and enter text from your phone.</span></li>
+        <li><strong>More than one TV</strong><span>Supports multiple TVs.</span></li>
+        <li><strong>Cast or mirror</strong><span>Show your phone screen on the TV.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Developer: Graan App Tech. Sure Universal TV Remote is available on
+    <a href="https://play.google.com/store/apps/details?id=com.sure.universal.remote">Google Play</a>.
+  </footer>
+</div>
+</body>
+</html>
